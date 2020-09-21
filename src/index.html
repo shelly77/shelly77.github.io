@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Yihan Cao's peronal web page">
+    <meta name="theme-color" content="#1d8fe1" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto:300,400,500&display=swap"
+      rel="stylesheet"
+    />
+    <title>Yihan Cao</title>
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=UA-162251625-1"
+    ></script>
+    <style>
+      html {
+        scroll-behavior: smooth;
+      }
+      html,
+      body {
+        margin: 0;
+        padding: 0;
+        height: 100%;
+        font-family: "Roboto", sans-serif;
+      }
+      p {
+        font-size: 1rem;
+      }
+      h1,
+      .hl {
+        font-size: 2.2rem;
+      }
+      h2 {
+        font-size: 1.7rem;
+      }
+      h3 {
+        font-size: 1.3rem;
+      }
+      h1,
+      h2,
+      h3 {
+        margin-block-start: 0;
+        margin-block-end: 0;
+      }
+      .btn {
+        padding: 0.3rem 0.6rem;
+        margin: 0.5rem;
+        border-color: rgba(255, 255, 255, 0.5);
+        border-radius: 0.1rem;
+        border-width: 0.05rem;
+        border-style: solid;
+        transition: ease-in-out;
+        transition-duration: 300ms;
+        transition-delay: 100ms;
+      }
+      .btn:hover {
+        border-color: white;
+        background-color: rgba(255, 255, 255, 0.1);
+        box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25),
+          0 10px 10px rgba(0, 0, 0, 0.22);
+      }
+      a {
+        text-decoration: none;
+        color: white;
+      }
+      .container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .content {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+      }
+      .main {
+        color: white;
+        height: 100%;
+        min-width: 100%;
+        background-image: linear-gradient(
+          -225deg,
+          #22e1ff 0%,
+          #1d8fe1 48%,
+          #625eb1 100%
+        );
+      }
+      .videoWrapper {
+        background-color: black;
+        background-image: radial-gradient(#434343, black);
+        height: 100%;
+        width: 100%;
+      }
+      .pt {
+        padding-top: 1rem;
+      }
+      .pb {
+        padding-bottom: 1rem;
+      }
+      .ptm {
+        padding-top: 0.6rem;
+      }
+      .pbm {
+        padding-bottom: 0.6rem;
+      }
+      .box {
+        display: flex;
+        flex-direction: column;
+      }
+
+      #toPageTop {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 2.5rem;
+        width: 2.5rem;
+        position: fixed;
+        text-align: center;
+        right: 2.5rem;
+        bottom: 2.5rem;
+        cursor: pointer;
+        border-radius: 50%;
+        border-width: 0.0625rem;
+        border-style: solid;
+        border-color: rgba(255, 255, 255, 0.3);
+        background-color: rgba(0, 0, 0, 0.1);
+        color: rgba(255, 255, 255, 0.6);
+      }
+
+      #toPageTop:hover {
+        color: rgba(255, 255, 255, 0.9);
+        border-color: rgba(255, 255, 255, 0.9);
+        background-color: rgba(255, 255, 255, 0.1);
+      }
+
+      .animation {
+        transition: all 0.6s;
+        animation-duration: 1s;
+      }
+      .fadeIn {
+        animation-name: fadeInBottom;
+        visibility: visible;
+      }
+      .fadeOut {
+        animation-name: fadeOutBottom;
+        visibility: hidden;
+      }
+
+      @keyframes fadeInBottom {
+        from {
+          opacity: 0;
+          transform: translateY(100%);
+        }
+        to {
+          visibility: visible;
+          opacity: 1;
+        }
+      }
+      @keyframes fadeOutBottom {
+        from {
+          visibility: visible;
+          opacity: 1;
+        }
+        to {
+          opacity: 0;
+          visibility: hidden;
+          transform: translateY(100%);
+        }
+      }
+
+      hr {
+        border-color: rgba(255, 255, 255, 0.1);
+        margin-block-start: 0;
+        margin-block-end: 0;
+        border-width: 0.03rem;
+      }
+
+      footer {
+        color: white;
+        padding: 3rem 1rem;
+        background-color: #3f3f3f;
+        background-image: linear-gradient(135deg, black, #434343, #29323c);
+      }
+
+      @media (min-width: 40rem) {
+        .pt {
+          padding-top: 2rem;
+        }
+        .pb {
+          padding-bottom: 2rem;
+        }
+        .ptm {
+          padding-top: 1rem;
+        }
+        .pbm {
+          padding-bottom: 1rem;
+        }
+        .btn {
+          padding: 0.4rem 1.6rem;
+        }
+        #toPageTop {
+          right: 3rem;
+          bottom: 3rem;
+          height: 3rem;
+          width: 3rem;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container main">
+      <div class="content">
+        <a class="hl pb pt" href="https://cao-yihan.github.io">
+          Hi, I'm Yihan Cao
+        </a>
+
+        <h2 class="pbm ptm">My PhD</h2>
+
+        <div class="pbm ptm">
+          <h3 class="pbm ptm">Thesis</h3>
+          <div class="box">
+            <a class="btn" href="./files/PhD_Thesis_Yihan.pdf"
+              >open pdf</a
+            >
+          </div>
+        </div>
+        <div class="pbm ptm">
+          <h3 class="pbm ptm">Thesis Presentation</h3>
+          <div class="box">
+            <a class="btn" href="#phd-presentation">watch video</a>
+          </div>
+        </div>
+
+        <div class="pbm ptm">
+          <h3 class="pbm ptm">Trial Lecture</h3>
+          <div class="box">
+            <a class="btn" href="#trial-lecture">watch video</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="phd-presentation" class="container videoWrapper">
+      <iframe title="phd presentation"
+        src="https://www.youtube.com/embed/56qz-xmRlqY"
+        frameborder="0"
+        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen
+      ></iframe>
+    </div>
+    <div id="trial-lecture" class="container videoWrapper">
+      <iframe title="trial lecture"
+        src="https://www.youtube.com/embed/hAL10rB6kR4"
+        frameborder="0"
+        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen
+      ></iframe>
+    </div>
+    <div></div>
+    <div id="toPageTop" class="animation">
+      🔺
+    </div>
+    <hr />
+    <footer>
+      <div>
+        &copy; Copyright 2020
+        <a href="https://cao-yihan.github.io">Cao Yihan</a>
+      </div>
+    </footer>
+  </body>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag("js", new Date());
+
+    gtag("config", "UA-162251625-1");
+
+    resizeEl = () => {
+      let mw = window.innerWidth;
+      let mh = window.innerWidth / 1.78;
+
+      if (mh > window.innerHeight) {
+        mh = window.innerHeight;
+        mw = window.innerHeight * 1.78;
+      }
+
+      document.getElementsByTagName("iframe").height = mh;
+      document.getElementsByTagName("iframe")[0].height = mh;
+      document.getElementsByTagName("iframe")[1].height = mh;
+      document.getElementsByTagName("iframe").width = mw;
+      document.getElementsByTagName("iframe")[0].width = mw;
+      document.getElementsByTagName("iframe")[1].width = mw;
+    };
+
+    window.onresize = resizeEl;
+    resizeEl();
+
+    const handleScroll = () => {
+      showToTopBtn(window.scrollY > window.innerHeight / 5);
+    };
+
+    const showToTopBtn = show => {
+      if (
+        !document
+          .getElementById("toPageTop")
+          .classList.contains(show === true ? "fadeIn" : "fadeOut")
+      ) {
+        document
+          .getElementById("toPageTop")
+          .classList.remove("fadeOut", "fadeIn");
+        document
+          .getElementById("toPageTop")
+          .classList.add(show === true ? "fadeIn" : "fadeOut");
+      }
+    };
+
+    document.getElementById("toPageTop").onclick = () => {
+      window.scrollTo(0, 0);
+    };
+    window.addEventListener("scroll", handleScroll, true);
+    handleScroll();
+  </script>
+</html>
